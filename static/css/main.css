@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+menu,
+nav,
+output,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+body {
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  background-image: url("dcsite-bg-ret.jpg");
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 0 30px 0 30px;
+  padding-top: 24px;
+  background-color: #f7f7f7;
+}
+
+.container {
+  width: 100%;
+  margin-left: 1px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  padding: 0 30px 0 30px;
+  background-color: #f7f7f7;
+  outline: red solid 2px;
+}
+.container .s_headline,
+.container .s_main_programs,
+.container .s_featured_speakers {
+  width: 100%;
+  min-height: 450px;
+  margin: 10px 0 10px 0;
+  outline: blue solid 2px;
+}
+.container .headline {
+  font-weight: 400px;
+  font-size: 14px;
+  color: #272a31;
+}
+
+.s_headline h3 {
+  font-weight: 400;
+  font-size: 24px;
+  color: #ec5242;
+}
+.s_headline h1 {
+  font-weight: 900;
+  font-size: 30px;
+  color: #ec5242;
+}
+.s_headline p {
+  font-weight: 500;
+  font-size: 14px;
+  color: #272a31;
+}
+.s_headline .description {
+  padding: 15px;
+  margin: 15px 0 15px 0;
+  border: #fff solid 3px;
+}
+.s_headline h2 {
+  font-weight: 900;
+  font-size: 24px;
+  color: #272a31;
+}
+.s_headline .time_loc {
+  margin-left: 10px;
+}
+.s_headline .time_loc p {
+  font-size: 16px;
+}/*# sourceMappingURL=main.css.map */
