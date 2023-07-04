@@ -106,7 +106,7 @@ $white-color: #fff;
 $padding-margin-left-right: 0 30px 0 30px;
 $tb-gap-sections: 10px 0 10px 0;
 
-$p-text-size: 10.5px;
+$p-text-size: 10px;
 $h3-text-24: 24px;
 $h3-text-14: 14px;
 $h1-text-size: 30px;
@@ -147,7 +147,7 @@ header {
   .s_featured_speakers {
     width: 100%;
     //min-width: $min-width-sec-mobile;
-    min-height: 450px;
+    min-height: 390px;
     margin: $tb-gap-sections;
     //background-color: blue;
     //outline: $outline-blue;
@@ -208,7 +208,7 @@ header {
      width: 35px;
      height: 1px;
      background-color: $red-text-color;
-     border: 0;
+     border: $red-text-color solid 1px;
    }
 }
 
@@ -228,7 +228,7 @@ header {
 
   & div.card p {
     @include lato-font($p-text-size, 500, $white-color);
-    line-height: 22.299px; 
+    line-height: 17px; 
   }
 
   & .card h3 {
@@ -250,7 +250,7 @@ header {
 
   & .btn_join a {
     @include lato-font(16px, 900, $white-color);
-    padding: 12px;
+    padding: 20px 50px;
     background-color: $red-text-color;
     font-style: normal;
     line-height: 28px;
@@ -264,4 +264,59 @@ header {
   & > h2 {
     color: $black-text-color;
   }
+
+  & .feature_card {
+    display: flex;
+    margin: 10px 12px;
+    outline: $red-text-color;
+  }
+  
+  & .feature_card .icon {
+    margin-right: 12px
+  }
+
+  & .feature_card h3 {
+    @include lato-font($h3-text-14, 700, $black-text-color);
+  }
+
+  & .feature_card .occupation {
+    @include lato-font($p-text-size, 500, $red-text-color);
+    font-style: italic;
+    line-height: 17px; 
+  }
+
+  & .feature_card hr {
+    width: 35px;
+    height: 1px;
+    background-color: $black-text-color;
+    color: $black-text-color;
+  }
+
+  & .feature_card .description {
+    @include lato-font($p-text-size, 500, $black-text-color);
+    line-height: 17px; 
+  }
+
+  & .btn_more {
+    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: center
+  }
+
+  & .btn_more a {
+    @include lato-font(10px, 400, $black-text-color);
+    width: $width-100p-24;
+    padding: 12px;
+    border: $black-text-color solid 1px;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.16px;
+    text-decoration: none;
+    text-align: center;
+  }
+
+}
+
+.btn_more a img {
+  margin: 0 8px;
 }
