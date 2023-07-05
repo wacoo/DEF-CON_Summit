@@ -13,20 +13,66 @@
 
 <body>
     <header>
-        <img src="static/images/burger.png" alt="">
+        <nav class="nav_social">
+            <ul>
+                <li><a href="about.html"><img src="static/images/Facebook.png" alt="Facebook"></a></li>
+                <li><a href=""><img src="static/images/twitter.png" alt="Twitter"></a></li>
+                <li><a href="">English</a></li>
+                <li><a href="">My Page</a></li>
+                <li><a href="">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="nav_bar">
+            <div class="burger">
+                <img src="static/images/burger.png" alt="Burger menu button">
+            </div>
+            <div class="logo">
+                <img src="static/images/logo.png" alt="CC global summit logo">
+            </div>
+            <nav class="menu_wide">
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="">Program</a></li>
+                    <li><a href="">Join</a></li>
+                    <li><a href="">Sponsor</a></li>
+                    <li><a href="">News</a></li>
+                    <li><a class="campaign" href="">CC Campaign</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
     </header>
+
+    <dialog class="modal_menu">
+        <div class="close">&times;</div>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Program</a></li>
+                <li><a href="">Join</a></li>
+                <li><a href="">Sponsor</a></li>
+                <li><a href="">News</a></li>
+                <li><a class="campaign" href="">CC Campaign</a></li>
+            </ul>
+        </nav>
+    </dialog>
     <main class="container">
         <section class="s_headline">
-            <h3>"Hello! Sharing world"</h3>
-            <h1>CREATIVE COMMONS<br>GLOBAL SUMMIT<br>2015</h1>
-            <div class="description">
-                <p>A joyful celebration believing in the value of openness and sharing, creating a positive change with
-                    people from over 80 countries in taking place in October, in Korea.</p>
+            <div>
+                <h3>"Hello! Sharing world"</h3>
+                <h1>CREATIVE COMMONS<br>GLOBAL SUMMIT<br>2015</h1>
+                <div class="description">
+                    <p>A joyful celebration believing in the value of openness and sharing, creating a positive change
+                        with
+                        people from over 80 countries in taking place in October, in Korea.</p>
+                </div>
+                <div class="time_loc">
+                    <h2>2015.10.15(THU)~16(FRI)</h2>
+                    <p>@Natinal Museum of Korea, Art Nabi and more</p>
+                </div>
             </div>
-            <div class="time_loc">
-                <h2>2015.10.15(THU)~16(FRI)</h2>
-                <p>@Natinal Museum of Korea, Art Nabi and more</p>
-            </div>
+
         </section>
         <section class="sec s_main_programs">
             <h2>Main Program</h2>
@@ -51,7 +97,7 @@
                         <img src="static/images/program_icon_03 1.png" alt="">
                     </div>
                     <h3>Forum</h3>
-                    <p>Have the time to share your thoughts and opinions with experts for  each topic.</p>
+                    <p>Have the time to share your thoughts and opinions with experts for each topic.</p>
                 </div>
                 <div class="card workshop">
                     <div class="icon">
@@ -71,13 +117,17 @@
             <div class="btn_join">
                 <a href="#">Join CC Global Summit</a>
             </div>
+            <div class="btn_see_whole">
+                <a href="#">SEE THE WHOLE PROGRAM</a>
+            </div>
         </section>
         <section class=" sec s_featured_speakers" id="featured">
-            
+
         </section>
     </main>
 
-    <script src="static/js/script.js"></script>
+    <script src="static/js/speakers.js"></script>
+    <script src="static/js/modal_menu.js"></script>
 </body>
 
 </html>
