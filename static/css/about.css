@@ -174,7 +174,7 @@ header .logo img {
 }
 .s_headline h1 {
   font-weight: 900;
-  font-size: 32px;
+  font-size: 30px;
   color: #ec5242;
   width: 336px;
   line-height: 36px;
@@ -219,23 +219,6 @@ header .logo img {
   width: 35px;
   color: #ec5242;
   margin: 15px;
-}
-
-.sec > h2 {
-  margin: 12px 0 12px 0;
-  text-align: center;
-  font-weight: 400;
-  font-size: 20px;
-  color: #fff;
-  font-style: normal;
-  line-height: 28px;
-  letter-spacing: -0.8px;
-}
-.sec .line {
-  width: 35px;
-  height: 1px;
-  background-color: #ec5242;
-  border: #ec5242 solid 1px;
 }
 
 .s_logo h2,

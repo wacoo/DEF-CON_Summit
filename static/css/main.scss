@@ -145,34 +145,25 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    //outline: $outline-red;
   }
 
   & .burger img {
     width: 31px;
     height: 27.28px;
-    //outline: $outline-blue;
   }
 
   & .logo {
-    //width: 100%;
-    //display: flex;
-    //justify-content: center;
     display: none;
-    // align-items: center;
-    //outline: $outline-red;
   }
 
   & .logo img {
     width: 130px;
     height: 51px;
-    //outline: $outline-blue;
   }
 
 }
 
 .menu_wide {
-
   & .active {
     color: $red-text-color;
   }
@@ -185,19 +176,16 @@ header {
   display: grid;
   grid-template-rows: auto auto auto;
   background-color: $bg-color;
+
   & .wrap {
     width: 100%;
     height: 450px;
     display: flex;
     padding-left: 0;
-    //margin-left: -12px;
     background-image: url("../images/dcsite-bg-ret.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
-    //z-index: 1;
-    //position: absolute;
-    //outline: $outline-red; 
+    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg); 
     padding: 0 12px 0 12px;
  }
 
@@ -216,8 +204,6 @@ header {
   & .s_headline {
     width: 100%;
     @include lato-font($p-text-size, 400px, $silver-tranparent-looking);
-    //margin: 0 12px 0 12px;
-    //outline: $outline-red;
     margin-top: 58px;
   }
 
@@ -226,15 +212,12 @@ header {
 .s_headline {
   & h3 {
     @include lato-font($h3-text-mob, 400, $red-text-color);
-    //padding: 0 12px;
   }
 
   & h1 {
     @include lato-font($h1-text-size-mob, 900, $red-text-color);
-    //padding: 0 12px;
     width: 336px;
     line-height: 36px;
-    //outline: $outline-red;
   }
 
   & p {
@@ -306,7 +289,6 @@ header {
   & .card p,
   & .card h3,
   & .card .icon {
-
     margin: 15px 5px 15px 15px;
   }
 
@@ -328,7 +310,6 @@ header {
 }
 
 .s_featured_speakers {
-
   &>h2 {
     color: $black-text-color;
     @include lato-font($h3-text-desk, 700, $black-text-color);
@@ -337,8 +318,6 @@ header {
   & .feature_card {
     display: flex;
     margin: 10px 12px 24px 12px;
-
-    //outline: $red-text-color;
   }
 
   & .feature_card .icon {
@@ -408,7 +387,6 @@ header {
   ul {
     list-style-type: none;
     padding-bottom: 24px;
-    //margin-left: 40px;
   }
 
   li {
@@ -455,6 +433,8 @@ header {
 .footer {
   display: none;
 }
+
+
 @media screen and (min-width: 768px) {
 
   header {
@@ -464,13 +444,11 @@ header {
     border: 0;
     display: flex;
     flex-direction: column;
-    //outline: $outline-red;
   }
 
   .nav_social {
     display: flex;
     justify-content: right;
-    //outline: $outline-blue;
     background-color: $black-text-color;
     padding: 12px 0;
     margin: 0 -30px;
@@ -479,22 +457,17 @@ header {
       display: flex;
       justify-content: right;
       align-items: center;
-      //outline: $outline-red;
 
     }
 
     ul {
-      //width: 20%;
       display: flex;
-      //outline: $outline-green;
       list-style-type: none;
       margin-right: 11%;
-      //outline: $outline-blue;
     }
 
     li {
       margin-left: 20px;
-      //outline: $outline-red;
     }
 
     img {
@@ -515,32 +488,27 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    //outline: $outline-red;
     margin: 0 -30px;
     padding: 5px 0;
     background-color: $white-color;
+
     & .burger {
       display: none;
     }
 
     & .logo {
       width: 25vw;
-      //padding-right: 20%;
       display: flex;
       justify-content: left;
-      //outline: $outline-blue;
     }
 
     & .menu_wide {
       display: block;
     }
 
-
-
     nav {
       display: flex;
       justify-content: center;
-      //outline: $outline-blue;
     }
 
     ul {
@@ -549,17 +517,11 @@ header {
       justify-content: space-between;
       align-items: center;
       list-style-type: none;
-      //padding-bottom: 24px;
-      //margin: 0 5% 0 0;
       padding: 0;
-      //outline: $outline-green;
     }
 
     li {
       padding: 12px;
-      //margin: 0 0 10px;
-      //margin: 10px 16px;
-      //outline: $outline-blue;
     }
 
     a {
@@ -585,7 +547,6 @@ header {
 
   }
   
-  
   .s_headline {
     width: 100%;
     display: flex;
@@ -602,13 +563,11 @@ header {
     }
     & h3 {
       @include lato-font($h3-text-desk, 400, $red-text-color);
-      //padding: 0 12px;
     }
   
     & h1 {
       width: 100%;
       @include lato-font($h1-text-size-desk, 900, $red-text-color);
-      //padding: 0 12px;
       line-height: 50px;
     }
   }
@@ -626,7 +585,6 @@ header {
       padding: 12px;
       display: inline-flex;
       flex-direction: column;
-      //grid-template-columns: 70px 80px 2fr;
       justify-content: center;
       align-items: center;
       background-color: $bg-color-rgba;
@@ -658,14 +616,11 @@ header {
       display: inline-flex;
       justify-content: center;
       margin: 10px 12px 24px 12px;
-  
-      //outline: $outline-red;
     }
 
     & .wrapper {
       width: 80%;
       padding: 24px;
-      //outline: $outline-blue;
     }
 
     & .btn_more {
@@ -679,14 +634,13 @@ header {
     justify-content: center;
     background-color: $black-text-color;
     padding-bottom: 30px;
-    //outline: $outline-red;
+
     h2 {
       @include lato-font(30px, 400, $silver-bg-color);
       font-style: normal;
       line-height: 28px;
       letter-spacing: -0.3px;
       padding: 30px 0 10px 0;
-      //outline: $outline-blue;
       text-align: center;
     }
 
@@ -694,6 +648,7 @@ header {
       width: 150px;
       margin-right: 24px;
     }
+    
     hr {
       width: 35px;
       color: $red-text-color;

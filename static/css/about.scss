@@ -112,7 +112,7 @@ $p-text-size: 11px;
 $h3-text-mob: 24px;
 $h3-text-desk: 30px;
 $h3-text-14: 14px;
-$h1-text-size-mob: 32px;
+$h1-text-size-mob: 30px;
 $h1-text-size-desk: 50px;
 $h2-text-size: 27px;
 
@@ -184,7 +184,6 @@ header {
     background-repeat: no-repeat;
     background-size:cover;
     background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
-     
     padding: 0 24px 0 24px;
  }
 
@@ -194,22 +193,18 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 50px;  
-  //background-color: $white-color;
+  margin-top: 50px;
  }
  
   & .s_headline,
   .s_logo {
     width: 100%;
-    //min-height: 390px;
     margin: 0;
   }
 
   & .s_headline {
     width: 100%;
     @include lato-font($p-text-size, 400px, $silver-tranparent-looking);
-    //margin: 0 12px 0 12px;
-    //outline: $outline-red;
     margin-top: 58px;
   }
 
@@ -273,24 +268,6 @@ header {
   }
 }
 
-.sec {
-  &>h2 {
-    margin: 12px 0 12px 0;
-    text-align: center;
-    @include lato-font(20px, 400, $white-color);
-    font-style: normal;
-    line-height: 28px;
-    letter-spacing: -0.8px;
-  }
-
-  & .line {
-    width: 35px;
-    height: 1px;
-    background-color: $red-text-color;
-    border: $red-text-color solid 1px;
-  }
-}
-
 .s_logo,
 .s_past {
   
@@ -322,7 +299,6 @@ header {
   
   p {
     @include lato-font(16px, 700, $silver-tranparent-looking);
-    //color: #838383;
     text-align: center;
     font-style: normal;
     line-height: 21px;
@@ -336,7 +312,6 @@ header {
 
 
 .s_logo {
-
   &>h2 {
     color: $black-text-color;
     @include lato-font($h3-text-desk, 700, $black-text-color);
@@ -344,7 +319,6 @@ header {
 }
 
 .s_past {
-
   & .wrapper_logo {
     width: 100%;
     display: inline-flex;
@@ -354,10 +328,12 @@ header {
   p {
     margin-bottom: 12px;
   }
+
   img {
     margin: 12px 24px 0;
   }
 }
+
 .s_partners {
   width: 100%;
   display: inline-flex;
@@ -367,6 +343,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   margin-top: 24px;
+
   h2 {
     @include lato-font(30px, 400, $silver-bg-color);
     font-style: normal;
@@ -390,6 +367,7 @@ header {
   display: flex;
   justify-content: center;
   background-color: $white-color;
+
   .wrapper {
     width: 80%;
     height: 100px;
@@ -432,7 +410,6 @@ header {
   ul {
     list-style-type: none;
     padding-bottom: 24px;
-    //margin-left: 40px;
   }
 
   li {
@@ -556,6 +533,7 @@ header {
     margin: 0 -30px;
     padding: 5px 0;
     background-color: $white-color;
+
     & .burger {
       display: none;
     }
@@ -569,8 +547,6 @@ header {
     & .menu_wide {
       display: block;
     }
-
-
 
     nav {
       display: flex;
@@ -612,8 +588,7 @@ header {
     }
 
   }
-  
-  
+
   .s_headline {
     width: 100%;
     display: flex;
@@ -664,7 +639,6 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    //min-height: 390px;
   }
 
   .s_past {
@@ -672,6 +646,7 @@ header {
       margin: 24px 0 24px 12px;
     }
   }
+
   .s_partners {
     display: none;
   }
@@ -680,6 +655,7 @@ header {
     display: flex;
     justify-content: center;
     background-color: $black-text-color;
+    
     .wrapper {
       width: 90%;
       height: 200px;
