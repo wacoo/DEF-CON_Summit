@@ -303,6 +303,7 @@ header {
 
   &>h2 {
     color: $black-text-color;
+    @include lato-font($h3-text-desk, 700, $black-text-color);
   }
 
   & .feature_card {
@@ -598,6 +599,31 @@ header {
 
     & .btn_see_whole a {
       color: $white-color;
+    }
+  }
+
+  .s_featured_speakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & .feature_card {
+      max-width: 47%;
+      display: inline-flex;
+      justify-content: center;
+      margin: 10px 12px 24px 12px;
+  
+      //outline: $outline-red;
+    }
+
+    & .wrapper {
+      width: 80%;
+      padding: 24px;
+      //outline: $outline-blue;
+    }
+
+    & .btn_more {
+      display: none;
     }
   }
 }

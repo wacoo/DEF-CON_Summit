@@ -246,6 +246,9 @@ header .logo img {
 
 .s_featured_speakers > h2 {
   color: #272a31;
+  font-weight: 700;
+  font-size: 30px;
+  color: #272a31;
 }
 .s_featured_speakers .feature_card {
   display: flex;
@@ -495,5 +498,24 @@ header .logo img {
   }
   .s_main_programs .btn_see_whole a {
     color: #fff;
+  }
+  .s_featured_speakers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .s_featured_speakers .feature_card {
+    max-width: 47%;
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px 12px 24px 12px;
+  }
+  .s_featured_speakers .wrapper {
+    width: 80%;
+    padding: 24px;
+  }
+  .s_featured_speakers .btn_more {
+    display: none;
   }
 }/*# sourceMappingURL=main.css.map */

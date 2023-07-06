@@ -51,6 +51,20 @@ window.addEventListener("resize", function () {
     else {
         count = 2;
         populateFutureSpeakers(count);
+        moreButtonListener();
+    }
+});
+
+
+window.addEventListener("load", function () {
+    let width = window.matchMedia("(min-width: 768px)");
+    if (window.matchMedia("(min-width: 768px)").matches) {
+        count = data.length;
+        populateFutureSpeakers(count);
+    }
+    else {
+        count = 2;
+        populateFutureSpeakers(count);
     }
 });
 
@@ -58,6 +72,9 @@ function populateFutureSpeakers(count) {
     const title = `<h2>Featured Speakers</h2>
     <hr class="line">`;
     parent.innerHTML = title;
+
+    let wrapper = `<div class="wrapper">`;
+
     for (let i = 0; i < count; i += 1) {
         let speaker = `<div class="feature_card">
             <div class="icon">
@@ -70,20 +87,27 @@ function populateFutureSpeakers(count) {
                 <p class="description">${data[i].description}</p>
             </div>
         </div>`;
-        parent.innerHTML = parent.innerHTML + speaker;
+        wrapper = wrapper + speaker;
     }
+    
+    wrapper = wrapper + '</div>';
+    parent.innerHTML = parent.innerHTML  + wrapper;
+
     if (count === 2) {
         const btn = `<div class="btn_more" id="btn_more">
                 <a href="#">MORE <img src="static/images/arrow_down 1.png" alt=""></a>
             </div>`
-        parent.innerHTML = parent.innerHTML + btn;
+            parent.innerHTML = parent.innerHTML + btn;
     }
 }
 populateFutureSpeakers(2);
 
-const more = document.getElementById('btn_more');
-more.addEventListener('click', (event) => {
-    event.preventDefault();
-    count = data.length;
-    populateFutureSpeakers(count);
-})
+function moreButtonListener() {
+    const more = document.getElementById('btn_more');
+    more.addEventListener('click', (event) => {
+        event.preventDefault();
+        count = data.length;
+        populateFutureSpeakers(count);
+    });
+}
+moreButtonListener();
