@@ -145,71 +145,63 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    //outline: $outline-red;
   }
 
   & .burger img {
     width: 31px;
     height: 27.28px;
-    //outline: $outline-blue;
   }
 
   & .logo {
-    //width: 100%;
-    //display: flex;
-    //justify-content: center;
     display: none;
-    // align-items: center;
-    //outline: $outline-red;
   }
 
   & .logo img {
     width: 130px;
     height: 51px;
-    //outline: $outline-blue;
   }
 
 }
 
 .menu_wide {
-
   & .active {
     color: $red-text-color;
   }
 }
 
-
-
 .container {
   width: 100%;
-  display: grid;
-  grid-template-rows: auto auto auto;
+  display: flex;
+  flex-direction: column;
   background-color: $bg-color;
   & .wrap {
     width: 100%;
-    height: 450px;
+    height: 430px;
     display: flex;
+    justify-content: center;
     padding-left: 0;
-    //margin-left: -12px;
     background-image: url("../images/dcsite-bg-ret.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
-    //z-index: 1;
-    //position: absolute;
-    //outline: $outline-red; 
-    padding: 0 12px 0 12px;
+     
+    padding: 0 24px 0 24px;
  }
 
- & .wrapper1 {  
-  margin-top: 50px;
+ & .wrapper1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;  
+  //background-color: $white-color;
  }
  
   & .s_headline,
-  .s_main_programs,
-  .s_featured_speakers {
+  .s_logo {
     width: 100%;
-    min-height: 390px;
+    //min-height: 390px;
     margin: 0;
   }
 
@@ -226,15 +218,12 @@ header {
 .s_headline {
   & h3 {
     @include lato-font($h3-text-mob, 400, $red-text-color);
-    //padding: 0 12px;
   }
 
   & h1 {
     @include lato-font($h1-text-size-mob, 900, $red-text-color);
-    //padding: 0 12px;
     width: 336px;
     line-height: 36px;
-    //outline: $outline-red;
   }
 
   & p {
@@ -242,22 +231,45 @@ header {
   }
 
   & .description {
-    max-width: 500px;
-    padding: 15px;
+    padding: 10px;
     margin: 15px 0 15px 0;
     border: $white-color solid 3px;
+    background-color: $white-color;
+    margin-bottom: 30px;
   }
 
   & h2 {
     @include lato-font($h3-text-mob, 900, $black-text-color);
   }
 
-  & .time_loc {
+  & .address {
     margin-left: 10px;
+    margin-bottom: 50px;
+    color: $black-text-color;
   }
 
-  & .time_loc p {
+  & .address p {
     font-size: calc($p-text-size + 2px);
+    color: $black-text-color;
+  }
+
+  & .email {
+    font-weight: 900;
+  }
+
+  span {
+    font-size: 12px;
+    font-weight: 600;
+  }
+
+  & .description p {
+    line-height: 20px;
+  }
+
+  & .line {
+    width: 35px;
+    color: $red-text-color;
+    margin: 15px;
   }
 }
 
@@ -279,124 +291,136 @@ header {
   }
 }
 
-.s_main_programs {
-  background-color: $black-text-color;
-
-  & .programs {
-    margin-top: 40px - 12px;
+.s_logo,
+.s_past {
+  
+  & h2 {
+    color: $black-text-color;
   }
 
-  & .card {
-    margin: 10px 12px;
-    display: grid;
-    grid-template-columns: 70px 80px 2fr;
-    align-items: center;
-    background-color: $bg-color-rgba;
-  }
-
-  & div.card p {
-    @include lato-font($p-text-size, 500, $white-color);
-    line-height: 17px;
-  }
-
-  & .card h3 {
-    @include lato-font($h3-text-14, 700, $red-text-color);
-  }
-
-  & .card p,
-  & .card h3,
-  & .card .icon {
-
-    margin: 15px 5px 15px 15px;
-  }
-
-  & .btn_join {
-    margin: 30px 0 30px 0;
+  .wrapper_logo {
     display: flex;
-    justify-content: center
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12px 0;
+    text-align: center;
+    background-color: $white-color;
   }
 
-  & .btn_join a {
-    @include lato-font(16px, 900, $white-color);
-    padding: 20px 50px;
-    background-color: $red-text-color;
+}
+
+.wrapper_logo {
+  h2 {
+    @include lato-font(20px, 700, $black-text-color);
+    color: #2C2C2C;
+    text-align: center;
     font-style: normal;
     line-height: 28px;
-    letter-spacing: -0.16px;
-    text-decoration: none;
+    letter-spacing: -0.4px;
+  }
+  
+  p {
+    @include lato-font(16px, 700, $silver-tranparent-looking);
+    //color: #838383;
+    text-align: center;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: -0.48px;
+  }
+
+  img {
+    margin: 50px 0 0 0;
   }
 }
 
-.s_featured_speakers {
+
+.s_logo {
 
   &>h2 {
     color: $black-text-color;
     @include lato-font($h3-text-desk, 700, $black-text-color);
   }
+}
 
-  & .feature_card {
-    display: flex;
-    margin: 10px 12px 24px 12px;
+.s_past {
 
-    //outline: $red-text-color;
+  & .wrapper_logo {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
   }
-
-  & .feature_card .icon {
-    margin-right: 12px
+  
+  p {
+    margin-bottom: 12px;
   }
-
-  & .feature_card img {
-    width: 108px;
+  img {
+    margin: 12px 24px 0;
   }
-
-  & .feature_card h3 {
-    @include lato-font($h3-text-14, 700, $black-text-color);
-  }
-
-  & .feature_card .occupation {
-    @include lato-font($p-text-size, 500, $red-text-color);
-    font-style: italic;
-    line-height: 17px;
-  }
-
-  & .feature_card hr {
-    width: 35px;
-    height: 1px;
-    background-color: $black-text-color;
-    color: $black-text-color;
-  }
-
-  & .feature_card .description {
-    @include lato-font($p-text-size, 500, $black-text-color);
-    line-height: 17px;
-  }
-
-  & .btn_more {
-    margin: 30px 0 30px 0;
-    display: flex;
-    justify-content: center
-  }
-
-  & .btn_more a {
-    @include lato-font(10px, 400, $black-text-color);
-    width: $width-100p-24;
-    padding: 12px;
-    border: $black-text-color solid 1px;
+}
+.s_partners {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  background-color: $black-text-color;
+  padding-bottom: 30px;   
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  h2 {
+    @include lato-font(30px, 400, $silver-bg-color);
     font-style: normal;
     line-height: 28px;
-    letter-spacing: -0.16px;
-    text-decoration: none;
+    letter-spacing: -0.3px;
+    padding: 30px 0 10px 0;
     text-align: center;
   }
 
+  img {
+    height: 30px;
+    text-align: center;
+  }
+
+  .p_logos {
+    text-align: center;
+  }
 }
 
-.btn_more a img {
-  margin: 0 8px;
-}
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: $white-color;
+  .wrapper {
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-.btn_see_whole {
-  display: none;
+  & .white {
+    display: none;
+  }
+
+  .black {
+    display: inline;
+  }
+
+  img {
+    height: 25px;
+    margin-right: 7%;
+  }
+
+  .decription {
+    padding: 12px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  p {
+    @include lato-font(10px, 700, $black-text-color);
+  }
 }
 
 //Modal
@@ -449,12 +473,33 @@ header {
 }
 
 .s_partners {
+  display: block;
+}
+
+.korean {
   display: none;
 }
 
-.footer {
+.white {
   display: none;
 }
+
+.black {
+  display: inline;
+}
+
+.des_mob {
+  display: block;
+}
+
+.des_desk {
+  display: none;
+}
+
+.wrapper_logo {
+  display: flex;
+}
+
 @media screen and (min-width: 768px) {
 
   header {
@@ -464,13 +509,11 @@ header {
     border: 0;
     display: flex;
     flex-direction: column;
-    //outline: $outline-red;
   }
 
   .nav_social {
     display: flex;
     justify-content: right;
-    //outline: $outline-blue;
     background-color: $black-text-color;
     padding: 12px 0;
     margin: 0 -30px;
@@ -479,22 +522,17 @@ header {
       display: flex;
       justify-content: right;
       align-items: center;
-      //outline: $outline-red;
 
     }
 
     ul {
-      //width: 20%;
       display: flex;
-      //outline: $outline-green;
       list-style-type: none;
       margin-right: 11%;
-      //outline: $outline-blue;
     }
 
     li {
       margin-left: 20px;
-      //outline: $outline-red;
     }
 
     img {
@@ -515,7 +553,6 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    //outline: $outline-red;
     margin: 0 -30px;
     padding: 5px 0;
     background-color: $white-color;
@@ -525,10 +562,8 @@ header {
 
     & .logo {
       width: 25vw;
-      //padding-right: 20%;
       display: flex;
       justify-content: left;
-      //outline: $outline-blue;
     }
 
     & .menu_wide {
@@ -540,7 +575,6 @@ header {
     nav {
       display: flex;
       justify-content: center;
-      //outline: $outline-blue;
     }
 
     ul {
@@ -549,17 +583,11 @@ header {
       justify-content: space-between;
       align-items: center;
       list-style-type: none;
-      //padding-bottom: 24px;
-      //margin: 0 5% 0 0;
       padding: 0;
-      //outline: $outline-green;
     }
 
     li {
       padding: 12px;
-      //margin: 0 0 10px;
-      //margin: 10px 16px;
-      //outline: $outline-blue;
     }
 
     a {
@@ -598,123 +626,84 @@ header {
     }
 
     & .wrapper1 {
-      margin: 40px 0 50px 15%;
+      width: 70%;
+      margin: 40px 0 50px 0;
     }
+ 
     & h3 {
       @include lato-font($h3-text-desk, 400, $red-text-color);
-      //padding: 0 12px;
+      padding: 0 12px;
     }
   
     & h1 {
       width: 100%;
       @include lato-font($h1-text-size-desk, 900, $red-text-color);
-      //padding: 0 12px;
+      padding: 0 12px;
       line-height: 50px;
+    }
+
+    & .des_mob {
+      display: none;
+    }
+    
+    & .des_desk {
+      display: block;
+      padding: 30px;
     }
   }
 
-  .s_main_programs {
-    & .programs {
-      display: flex;
-      justify-content: center;
-    }
-
-    & .card {
-      width: 220px;
-      text-align: center;
-      margin: 10px 2px;
-      padding: 12px;
-      display: inline-flex;
-      flex-direction: column;
-      //grid-template-columns: 70px 80px 2fr;
-      justify-content: center;
-      align-items: center;
-      background-color: $bg-color-rgba;
-    }
-
-    & .btn_join {
+  .s_logo {
+    & .wrapper_logo {
       display: none;
     }
 
-    & .btn_see_whole {
-      margin: 40px 0 50px;
-      display: flex;
-      justify-content: center;
-      color: $white-color;
-    }
-
-    & .btn_see_whole a {
-      color: $white-color;
-    }
   }
 
-  .s_featured_speakers {
+  .s_logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    & .feature_card {
-      max-width: 47%;
-      display: inline-flex;
-      justify-content: center;
-      margin: 10px 12px 24px 12px;
-  
-      //outline: $outline-red;
-    }
-
-    & .wrapper {
-      width: 80%;
-      padding: 24px;
-      //outline: $outline-blue;
-    }
-
-    & .btn_more {
-      display: none;
-    }
+    //min-height: 390px;
   }
 
-  .s_partners {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    background-color: $black-text-color;
-    padding-bottom: 30px;
-    //outline: $outline-red;
-    h2 {
-      @include lato-font(30px, 400, $silver-bg-color);
-      font-style: normal;
-      line-height: 28px;
-      letter-spacing: -0.3px;
-      padding: 30px 0 10px 0;
-      //outline: $outline-blue;
-      text-align: center;
-    }
-
+  .s_past {
     img {
-      width: 150px;
-      margin-right: 24px;
+      margin: 24px 0 24px 12px;
     }
-    hr {
-      width: 35px;
-      color: $red-text-color;
-    }
+  }
+  .s_partners {
+    display: none;
   }
 
   .footer {
     display: flex;
     justify-content: center;
-
+    background-color: $black-text-color;
     .wrapper {
-      width: 80%;
+      width: 90%;
       height: 200px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
 
+    & .white {
+      display: inline;
+    }
+
+    .black {
+      display: none;
+    }
+
+    .korean {
+      display: block;
+    }
+
     img {
-      height: 30px;
+      height: 50px;
       margin-right: 7%;
+      margin-left: 60px;
     }
 
     .decription {
@@ -725,7 +714,7 @@ header {
     }
 
     p {
-      @include lato-font(14px, 700, $black-text-color);
+      @include lato-font(14px, 700, $white-color);
       font-style: normal;
       line-height: 28px;
       letter-spacing: -0.14px;
