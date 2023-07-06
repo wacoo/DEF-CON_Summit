@@ -104,7 +104,8 @@ $bg-color: #f7f7f7;
 $bg-color-rgba: rgba(247, 247, 247, 0.1);
 $text-color-rgba: rgba(247, 247, 247, 0.5);
 $white-color: #fff;
-$silver-tranparent-looking: #868686;
+//$silver-tranparent-looking: #868686;
+$silver-tranparent-looking: #2d0e0e;
 $padding-margin-left-right: 0 30px 0 30px;
 $tb-gap-sections: 10px 0 10px 0;
 
@@ -125,7 +126,6 @@ $h2-text-size: 27px;
 body {
   font-family: "lato", sans-serif;
   font-style: normal;
-  background-image: url("static/images/dcsite-bg-ret.jpg");
 }
 
 header {
@@ -157,8 +157,8 @@ header {
   }
 
   & .logo img {
-    width: 130px;
-    height: 51px;
+    width: 160px;
+    height: 45px;
   }
 }
 
@@ -239,7 +239,7 @@ header {
     display: flex;
     justify-content: center;
     padding-left: 0;
-    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
+    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dc-31-future.webp);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0 24px 0 24px;
@@ -308,6 +308,8 @@ header {
 
   img {
     margin: 50px 0 0 0;
+    width: 450px;
+    height: 300px;
   }
 }
 

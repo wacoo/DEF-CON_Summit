@@ -104,7 +104,7 @@ $bg-color: #f7f7f7;
 $bg-color-rgba: rgba(247, 247, 247, 0.1);
 $text-color-rgba: rgba(247, 247, 247, 0.5);
 $white-color: #fff;
-$silver-tranparent-looking: #868686;
+$silver-tranparent-looking: #2d0e0e;
 $padding-margin-left-right: 0 30px 0 30px;
 $tb-gap-sections: 10px 0 10px 0;
 
@@ -125,7 +125,6 @@ $h2-text-size: 27px;
 body {
   font-family: "lato", sans-serif;
   font-style: normal;
-  background-image: url("static/images/dcsite-bg-ret.jpg");
 }
 
 header {
@@ -157,8 +156,8 @@ header {
   }
 
   & .logo img {
-    width: 130px;
-    height: 51px;
+    width: 160px;
+    height: 45px;
   }
 }
 
@@ -179,10 +178,9 @@ header {
     height: 450px;
     display: flex;
     padding-left: 0;
-    background-image: url("../images/dcsite-bg-ret.jpg");
+    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.5)), url(../images/dcsite-bg-ret.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
     padding: 0 12px 0 12px;
   }
 
@@ -214,7 +212,6 @@ header {
 
   & h1 {
     @include lato-font($h1-text-size-mob, 900, $red-text-color);
-
     width: 336px;
     line-height: 36px;
   }
@@ -265,7 +262,6 @@ header {
 
 .s_main_programs {
   background-color: $black-text-color;
-
   & .programs {
     margin-top: 40px - 12px;
   }
@@ -292,6 +288,14 @@ header {
   & .card h3,
   & .card .icon {
     margin: 15px 5px 15px 15px;
+  }
+
+  & .icon img {
+    width: 150px;
+  }
+
+  & .work {
+    height: 110px;
   }
 
   & .btn_join {
@@ -574,9 +578,13 @@ header {
 
     & h1 {
       width: 100%;
-
       @include lato-font($h1-text-size-desk, 900, $red-text-color);
-
+      background-image: linear-gradient(to bottom, $red-text-color, rgba(240, 10, 10, 0.2)), url(../images/fire3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
       line-height: 50px;
     }
   }

@@ -92,7 +92,6 @@ video {
 body {
   font-family: "lato", sans-serif;
   font-style: normal;
-  background-image: url("static/images/dcsite-bg-ret.jpg");
 }
 
 header {
@@ -103,30 +102,25 @@ header {
   display: flex;
   background-color: #f7f7f7;
 }
-
 header .nav_bar {
   display: flex;
   align-items: center;
 }
-
 header .burger {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 header .burger img {
   width: 31px;
   height: 27.28px;
 }
-
 header .logo {
   display: none;
 }
-
 header .logo img {
-  width: 130px;
-  height: 51px;
+  width: 160px;
+  height: 45px;
 }
 
 .menu_wide .active {
@@ -139,23 +133,19 @@ header .logo img {
   grid-template-rows: auto auto auto;
   background-color: #f7f7f7;
 }
-
 .container .wrap {
   width: 100%;
   height: 450px;
   display: flex;
   padding-left: 0;
-  background-image: url("../images/dcsite-bg-ret.jpg");
+  background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.5)), url(../images/dcsite-bg-ret.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
   padding: 0 12px 0 12px;
 }
-
 .container .wrapper1 {
   margin-top: 50px;
 }
-
 .container .s_headline,
 .container .s_main_programs,
 .container .s_featured_speakers {
@@ -163,12 +153,11 @@ header .logo img {
   min-height: 390px;
   margin: 0;
 }
-
 .container .s_headline {
   width: 100%;
   font-weight: 400px;
   font-size: 11px;
-  color: #868686;
+  color: #2d0e0e;
   margin-top: 58px;
 }
 
@@ -177,7 +166,6 @@ header .logo img {
   font-size: 24px;
   color: #ec5242;
 }
-
 .s_headline h1 {
   font-weight: 900;
   font-size: 32px;
@@ -185,30 +173,25 @@ header .logo img {
   width: 336px;
   line-height: 36px;
 }
-
 .s_headline p {
   font-weight: 500;
   font-size: 11px;
-  color: #868686;
+  color: #2d0e0e;
 }
-
 .s_headline .description {
   max-width: 500px;
   padding: 15px;
   margin: 15px 0 15px 0;
   border: #fff solid 3px;
 }
-
 .s_headline h2 {
   font-weight: 900;
   font-size: 24px;
   color: #272a31;
 }
-
 .s_headline .time_loc {
   margin-left: 10px;
 }
-
 .s_headline .time_loc p {
   font-size: 13px;
 }
@@ -223,7 +206,6 @@ header .logo img {
   line-height: 28px;
   letter-spacing: -0.8px;
 }
-
 .sec .line {
   width: 35px;
   height: 1px;
@@ -234,11 +216,9 @@ header .logo img {
 .s_main_programs {
   background-color: #272a31;
 }
-
 .s_main_programs .programs {
   margin-top: 28px;
 }
-
 .s_main_programs .card {
   margin: 10px 12px;
   display: grid;
@@ -246,32 +226,31 @@ header .logo img {
   align-items: center;
   background-color: rgba(247, 247, 247, 0.1);
 }
-
 .s_main_programs div.card p {
   font-weight: 500;
   font-size: 11px;
   color: #fff;
   line-height: 17px;
 }
-
 .s_main_programs .card h3 {
   font-weight: 700;
   font-size: 14px;
   color: #ec5242;
 }
-
-.s_main_programs .card p,
-.s_main_programs .card h3,
-.s_main_programs .card .icon {
+.s_main_programs .card p, .s_main_programs .card h3, .s_main_programs .card .icon {
   margin: 15px 5px 15px 15px;
 }
-
+.s_main_programs .icon img {
+  width: 150px;
+}
+.s_main_programs .work {
+  height: 110px;
+}
 .s_main_programs .btn_join {
   margin: 30px 0 30px 0;
   display: flex;
   justify-content: center;
 }
-
 .s_main_programs .btn_join a {
   font-weight: 900;
   font-size: 16px;
@@ -290,26 +269,21 @@ header .logo img {
   font-size: 30px;
   color: #272a31;
 }
-
 .s_featured_speakers .feature_card {
   display: flex;
   margin: 10px 12px 24px 12px;
 }
-
 .s_featured_speakers .feature_card .icon {
   margin-right: 12px;
 }
-
 .s_featured_speakers .feature_card img {
   width: 108px;
 }
-
 .s_featured_speakers .feature_card h3 {
   font-weight: 700;
   font-size: 14px;
   color: #272a31;
 }
-
 .s_featured_speakers .feature_card .occupation {
   font-weight: 500;
   font-size: 11px;
@@ -317,27 +291,23 @@ header .logo img {
   font-style: italic;
   line-height: 17px;
 }
-
 .s_featured_speakers .feature_card hr {
   width: 35px;
   height: 1px;
   background-color: #272a31;
   color: #272a31;
 }
-
 .s_featured_speakers .feature_card .description {
   font-weight: 500;
   font-size: 11px;
   color: #272a31;
   line-height: 17px;
 }
-
 .s_featured_speakers .btn_more {
   margin: 30px 0 30px 0;
   display: flex;
   justify-content: center;
 }
-
 .s_featured_speakers .btn_more a {
   font-weight: 400;
   font-size: 10px;
@@ -365,38 +335,32 @@ header .logo img {
   background-color: #d3d3d3;
   border: 0;
 }
-
 .modal_menu ul {
   list-style-type: none;
   padding-bottom: 24px;
 }
-
 .modal_menu li {
   padding: 12px;
   text-align: center;
-  border-bottom: #868686 solid 1px;
+  border-bottom: #2d0e0e solid 1px;
 }
-
 .modal_menu a:hover {
   border: #fff solid 1px;
 }
-
 .modal_menu a {
   font-weight: 600;
   font-size: 25px;
-  color: #868686;
+  color: #2d0e0e;
   font-style: normal;
   line-height: normal;
   text-decoration: none;
 }
-
 .modal_menu .close {
   font-weight: 400;
   font-size: 24px;
-  color: #868686;
+  color: #2d0e0e;
   padding: 12px 24px;
 }
-
 .modal_menu .campaign {
   color: #ec5242;
   border: #ec5242 solid 4px;
@@ -428,7 +392,6 @@ header .logo img {
     display: flex;
     flex-direction: column;
   }
-
   .nav_social {
     display: flex;
     justify-content: right;
@@ -436,28 +399,23 @@ header .logo img {
     padding: 12px 0;
     margin: 0 -30px;
   }
-
   .nav_social .menu_social {
     display: flex;
     justify-content: right;
     align-items: center;
   }
-
   .nav_social ul {
     display: flex;
     list-style-type: none;
     margin-right: 11%;
   }
-
   .nav_social li {
     margin-left: 20px;
   }
-
   .nav_social img {
     height: 18px;
     margin-top: 5px;
   }
-
   .nav_social a {
     font-weight: 400;
     font-size: 12px;
@@ -466,7 +424,6 @@ header .logo img {
     line-height: normal;
     text-decoration: none;
   }
-
   .nav_bar {
     display: flex;
     justify-content: center;
@@ -475,26 +432,21 @@ header .logo img {
     padding: 5px 0;
     background-color: #fff;
   }
-
   .nav_bar .burger {
     display: none;
   }
-
   .nav_bar .logo {
     width: 25vw;
     display: flex;
     justify-content: left;
   }
-
   .nav_bar .menu_wide {
     display: block;
   }
-
   .nav_bar nav {
     display: flex;
     justify-content: center;
   }
-
   .nav_bar ul {
     width: 50vw;
     display: flex;
@@ -503,27 +455,23 @@ header .logo img {
     list-style-type: none;
     padding: 0;
   }
-
   .nav_bar li {
     padding: 12px;
   }
-
   .nav_bar a {
     font-weight: 800;
     font-size: 10px;
-    color: #868686;
+    color: #2d0e0e;
     font-style: normal;
     line-height: normal;
     text-decoration: none;
   }
-
   .nav_bar .close {
     font-weight: 400;
     font-size: 30px;
-    color: #868686;
+    color: #2d0e0e;
     padding: 12px 12px;
   }
-
   .nav_bar .campaign {
     display: flex;
     justify-content: center;
@@ -532,42 +480,41 @@ header .logo img {
     border: #ec5242 solid 4px;
     padding: 5px 12px;
   }
-
   .s_headline {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-
   .s_headline .wrap {
     height: 500px;
     margin: 60px 0 0 0;
   }
-
   .s_headline .wrapper1 {
     margin: 40px 0 50px 15%;
   }
-
   .s_headline h3 {
     font-weight: 400;
     font-size: 30px;
     color: #ec5242;
   }
-
   .s_headline h1 {
     width: 100%;
     font-weight: 900;
     font-size: 50px;
     color: #ec5242;
+    background-image: linear-gradient(to bottom, #ec5242, rgba(240, 10, 10, 0.2)), url(../images/fire3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
     line-height: 50px;
   }
-
   .s_main_programs .programs {
     display: flex;
     justify-content: center;
   }
-
   .s_main_programs .card {
     width: 220px;
     text-align: center;
@@ -579,45 +526,37 @@ header .logo img {
     align-items: center;
     background-color: rgba(247, 247, 247, 0.1);
   }
-
   .s_main_programs .btn_join {
     display: none;
   }
-
   .s_main_programs .btn_see_whole {
     margin: 40px 0 50px;
     display: flex;
     justify-content: center;
     color: #fff;
   }
-
   .s_main_programs .btn_see_whole a {
     color: #fff;
   }
-
   .s_featured_speakers {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
   .s_featured_speakers .feature_card {
     max-width: 47%;
     display: inline-flex;
     justify-content: center;
     margin: 10px 12px 24px 12px;
   }
-
   .s_featured_speakers .wrapper {
     width: 80%;
     padding: 24px;
   }
-
   .s_featured_speakers .btn_more {
     display: none;
   }
-
   .s_partners {
     width: 100%;
     display: flex;
@@ -625,7 +564,6 @@ header .logo img {
     background-color: #272a31;
     padding-bottom: 30px;
   }
-
   .s_partners h2 {
     font-weight: 400;
     font-size: 30px;
@@ -636,22 +574,18 @@ header .logo img {
     padding: 30px 0 10px 0;
     text-align: center;
   }
-
   .s_partners img {
     width: 150px;
     margin-right: 24px;
   }
-
   .s_partners hr {
     width: 35px;
     color: #ec5242;
   }
-
   .footer {
     display: flex;
     justify-content: center;
   }
-
   .footer .wrapper {
     width: 80%;
     height: 200px;
@@ -659,19 +593,16 @@ header .logo img {
     justify-content: center;
     align-items: center;
   }
-
   .footer img {
     height: 30px;
     margin-right: 7%;
   }
-
   .footer .decription {
     padding: 12px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-
   .footer p {
     font-weight: 700;
     font-size: 14px;
@@ -681,4 +612,4 @@ header .logo img {
     letter-spacing: -0.14px;
     padding-bottom: 15px;
   }
-}
+}/*# sourceMappingURL=main.css.map */
