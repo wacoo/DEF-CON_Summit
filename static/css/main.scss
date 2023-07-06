@@ -160,7 +160,6 @@ header {
     width: 130px;
     height: 51px;
   }
-
 }
 
 .menu_wide {
@@ -168,8 +167,6 @@ header {
     color: $red-text-color;
   }
 }
-
-
 
 .container {
   width: 100%;
@@ -184,15 +181,15 @@ header {
     padding-left: 0;
     background-image: url("../images/dcsite-bg-ret.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
-    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg); 
+    background-size: cover;
+    background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
     padding: 0 12px 0 12px;
- }
+  }
 
- & .wrapper1 {  
-  margin-top: 50px;
- }
- 
+  & .wrapper1 {
+    margin-top: 50px;
+  }
+
   & .s_headline,
   .s_main_programs,
   .s_featured_speakers {
@@ -203,10 +200,11 @@ header {
 
   & .s_headline {
     width: 100%;
+
     @include lato-font($p-text-size, 400px, $silver-tranparent-looking);
+
     margin-top: 58px;
   }
-
 }
 
 .s_headline {
@@ -216,6 +214,7 @@ header {
 
   & h1 {
     @include lato-font($h1-text-size-mob, 900, $red-text-color);
+
     width: 336px;
     line-height: 36px;
   }
@@ -245,10 +244,12 @@ header {
 }
 
 .sec {
-  &>h2 {
+  & > h2 {
     margin: 12px 0 12px 0;
     text-align: center;
+
     @include lato-font(20px, 400, $white-color);
+
     font-style: normal;
     line-height: 28px;
     letter-spacing: -0.8px;
@@ -279,6 +280,7 @@ header {
 
   & div.card p {
     @include lato-font($p-text-size, 500, $white-color);
+
     line-height: 17px;
   }
 
@@ -295,11 +297,12 @@ header {
   & .btn_join {
     margin: 30px 0 30px 0;
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
 
   & .btn_join a {
     @include lato-font(16px, 900, $white-color);
+
     padding: 20px 50px;
     background-color: $red-text-color;
     font-style: normal;
@@ -310,8 +313,9 @@ header {
 }
 
 .s_featured_speakers {
-  &>h2 {
+  & > h2 {
     color: $black-text-color;
+
     @include lato-font($h3-text-desk, 700, $black-text-color);
   }
 
@@ -321,7 +325,7 @@ header {
   }
 
   & .feature_card .icon {
-    margin-right: 12px
+    margin-right: 12px;
   }
 
   & .feature_card img {
@@ -334,6 +338,7 @@ header {
 
   & .feature_card .occupation {
     @include lato-font($p-text-size, 500, $red-text-color);
+
     font-style: italic;
     line-height: 17px;
   }
@@ -347,17 +352,19 @@ header {
 
   & .feature_card .description {
     @include lato-font($p-text-size, 500, $black-text-color);
+
     line-height: 17px;
   }
 
   & .btn_more {
     margin: 30px 0 30px 0;
     display: flex;
-    justify-content: center
+    justify-content: center;
   }
 
   & .btn_more a {
     @include lato-font(10px, 400, $black-text-color);
+
     width: $width-100p-24;
     padding: 12px;
     border: $black-text-color solid 1px;
@@ -367,7 +374,6 @@ header {
     text-decoration: none;
     text-align: center;
   }
-
 }
 
 .btn_more a img {
@@ -401,6 +407,7 @@ header {
 
   a {
     @include lato-font(25px, 600, $silver-tranparent-looking);
+
     font-style: normal;
     line-height: normal;
     text-decoration: none;
@@ -408,6 +415,7 @@ header {
 
   & .close {
     @include lato-font(24px, 400, $silver-tranparent-looking);
+
     padding: 12px 24px;
   }
 
@@ -434,9 +442,7 @@ header {
   display: none;
 }
 
-
 @media screen and (min-width: 768px) {
-
   header {
     width: 100%;
     background-color: $white-color;
@@ -457,7 +463,6 @@ header {
       display: flex;
       justify-content: right;
       align-items: center;
-
     }
 
     ul {
@@ -477,12 +482,12 @@ header {
 
     a {
       @include lato-font(12px, 400, $white-color);
+
       font-style: normal;
       line-height: normal;
       text-decoration: none;
     }
   }
-
 
   .nav_bar {
     display: flex;
@@ -526,6 +531,7 @@ header {
 
     a {
       @include lato-font(10px, 800, $silver-tranparent-looking);
+
       font-style: normal;
       line-height: normal;
       text-decoration: none;
@@ -533,6 +539,7 @@ header {
 
     & .close {
       @include lato-font(30px, 400, $silver-tranparent-looking);
+
       padding: 12px 12px;
     }
 
@@ -544,16 +551,15 @@ header {
       border: $red-text-color solid 4px;
       padding: 5px 12px;
     }
-
   }
-  
+
   .s_headline {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-    & .wrap {      
+    & .wrap {
       height: 500px;
       margin: 60px 0 0 0;
     }
@@ -561,13 +567,16 @@ header {
     & .wrapper1 {
       margin: 40px 0 50px 15%;
     }
+
     & h3 {
       @include lato-font($h3-text-desk, 400, $red-text-color);
     }
-  
+
     & h1 {
       width: 100%;
+
       @include lato-font($h1-text-size-desk, 900, $red-text-color);
+
       line-height: 50px;
     }
   }
@@ -611,6 +620,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     & .feature_card {
       max-width: 47%;
       display: inline-flex;
@@ -637,6 +647,7 @@ header {
 
     h2 {
       @include lato-font(30px, 400, $silver-bg-color);
+
       font-style: normal;
       line-height: 28px;
       letter-spacing: -0.3px;
@@ -648,7 +659,7 @@ header {
       width: 150px;
       margin-right: 24px;
     }
-    
+
     hr {
       width: 35px;
       color: $red-text-color;
@@ -681,6 +692,7 @@ header {
 
     p {
       @include lato-font(14px, 700, $black-text-color);
+
       font-style: normal;
       line-height: 28px;
       letter-spacing: -0.14px;

@@ -128,45 +128,6 @@ header .logo img {
   color: #ec5242;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #f7f7f7;
-}
-.container .wrap {
-  width: 100%;
-  height: 430px;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  background-image: url("../images/dcsite-bg-ret.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
-  padding: 0 24px 0 24px;
-}
-.container .wrapper1 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 50px;
-}
-.container .s_headline,
-.container .s_logo {
-  width: 100%;
-  margin: 0;
-}
-.container .s_headline {
-  width: 100%;
-  font-weight: 400px;
-  font-size: 11px;
-  color: #868686;
-  margin-top: 58px;
-}
-
 .s_headline h3 {
   font-weight: 400;
   font-size: 24px;
@@ -221,6 +182,44 @@ header .logo img {
   margin: 15px;
 }
 
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+.container .wrap {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 24px 0 24px;
+}
+.container .wrapper1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.container .s_headline,
+.container .s_logo {
+  width: 100%;
+  margin: 0;
+}
+.container .s_headline {
+  width: 100%;
+  font-weight: 400px;
+  font-size: 11px;
+  color: #868686;
+  margin-top: 58px;
+}
+
 .s_logo h2,
 .s_past h2 {
   color: #272a31;
@@ -240,7 +239,7 @@ header .logo img {
   font-weight: 700;
   font-size: 20px;
   color: #272a31;
-  color: #2C2C2C;
+  color: #2c2c2c;
   text-align: center;
   font-style: normal;
   line-height: 28px;
