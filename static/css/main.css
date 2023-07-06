@@ -126,38 +126,48 @@ header .logo img {
 
 .container {
   width: 100%;
-  margin-left: 1px;
-  padding-top: 50px;
   display: grid;
   grid-template-rows: auto auto auto;
   background-color: #f7f7f7;
+}
+.container .wrap {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  padding-left: 0;
+  background-image: url("../images/dcsite-bg-ret.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dcsite-bg-ret.jpg);
+  padding: 0 12px 0 12px;
+}
+.container .wrapper1 {
+  margin-top: 50px;
 }
 .container .s_headline,
 .container .s_main_programs,
 .container .s_featured_speakers {
   width: 100%;
   min-height: 390px;
-  margin: 10px 0 10px 0;
+  margin: 0;
 }
 .container .s_headline {
-  width: calc(100% - 24px);
+  width: 100%;
   font-weight: 400px;
   font-size: 11px;
   color: #868686;
-  margin: 0 12px 0 12px;
 }
 
 .s_headline h3 {
   font-weight: 400;
   font-size: 24px;
   color: #ec5242;
-  padding: 0 12px;
 }
 .s_headline h1 {
   font-weight: 900;
-  font-size: 33px;
+  font-size: 32px;
   color: #ec5242;
-  padding: 0 12px;
+  width: 336px;
   line-height: 36px;
 }
 .s_headline p {
@@ -462,10 +472,17 @@ header .logo img {
     padding: 5px 12px;
   }
   .s_headline {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 80px 0;
+  }
+  .s_headline .wrap {
+    height: 500px;
+    margin: 60px 0 0 0;
+  }
+  .s_headline .wrapper1 {
+    margin: 40px 0 50px 15%;
   }
   .s_headline h3 {
     font-weight: 400;
@@ -474,6 +491,7 @@ header .logo img {
     padding: 0 12px;
   }
   .s_headline h1 {
+    width: 100%;
     font-weight: 900;
     font-size: 50px;
     color: #ec5242;
