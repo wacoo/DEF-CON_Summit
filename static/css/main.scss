@@ -420,6 +420,13 @@ header {
   display: none;
 }
 
+.s_partners {
+  display: none;
+}
+
+.footer {
+  display: none;
+}
 @media screen and (min-width: 768px) {
 
   header {
@@ -624,6 +631,66 @@ header {
 
     & .btn_more {
       display: none;
+    }
+  }
+
+  .s_partners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: $black-text-color;
+    padding-bottom: 30px;
+    //outline: $outline-red;
+    h2 {
+      @include lato-font(30px, 400, $silver-bg-color);
+      font-style: normal;
+      line-height: 28px;
+      letter-spacing: -0.3px;
+      padding: 30px 0 10px 0;
+      //outline: $outline-blue;
+      text-align: center;
+    }
+
+    img {
+      width: 150px;
+      margin-right: 24px;
+    }
+    hr {
+      width: 35px;
+      color: $red-text-color;
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+
+    .wrapper {
+      width: 80%;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      height: 30px;
+      margin-right: 7%;
+    }
+
+    .decription {
+      padding: 12px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    p {
+      @include lato-font(14px, 700, $black-text-color);
+      font-style: normal;
+      line-height: 28px;
+      letter-spacing: -0.14px;
+      padding-bottom: 15px;
     }
   }
 }
