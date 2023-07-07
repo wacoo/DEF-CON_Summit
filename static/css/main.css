@@ -364,9 +364,7 @@ header .logo img {
   display: flex;
   justify-content: center;
 }
-/* .s_featured_speakers .btn_less {
-  display: none;
-} */
+
 .s_featured_speakers .btn_more a,
 .s_featured_speakers .btn_less a {
   font-weight: 400;
