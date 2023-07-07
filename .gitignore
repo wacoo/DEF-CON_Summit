@@ -1,3 +1,2 @@
 node_modules
-static/css/about1.scss
-static/css/main1.scss
+*.scss
