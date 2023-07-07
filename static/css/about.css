@@ -94,6 +94,27 @@ body {
   font-style: normal;
 }
 
+.wrapper_logo h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #272a31;
+  color: #2c2c2c;
+  text-align: center;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+
+.wrapper_logo p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2d0e0e;
+  text-align: center;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: -0.48px;
+}
+
 .footer p {
   font-weight: 700;
   font-size: 10px;
@@ -102,6 +123,18 @@ body {
 
 .wrapper_logo {
   display: flex;
+}
+
+.s_headline p {
+  font-weight: 500;
+  font-size: 11px;
+  color: #2d0e0e;
+}
+
+.s_headline h2 {
+  font-weight: 900;
+  font-size: 24px;
+  color: #272a31;
 }
 
 .s_logo h2,
@@ -116,8 +149,6 @@ body {
 .s_past img {
   width: 350px;
   height: 200px;
-
-  /* outline: blue solid 2px; */
 }
 
 .s_logo .wrapper_logo,
@@ -126,7 +157,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 12px 0;
+  padding: 30px 0 0 12px;
   text-align: center;
   background-color: #fff;
 }
@@ -169,13 +200,6 @@ body {
 .s_past .wrapper_logo {
   display: flex;
   justify-content: center;
-}
-
-/* Text overlay */
-.s_past .wrapper_logo div {
-  /* padding: 24px; */
-
-  /* outline: rgb(9, 216, 216) solid 2px; */
 }
 
 .s_partners {
@@ -247,8 +271,6 @@ body {
   position: relative;
   max-width: 800px;
   margin: 24px auto auto;
-
-  /* outline: purple solid 2px; */
 }
 
 .img_parent img { vertical-align: middle; }
@@ -256,15 +278,13 @@ body {
 .img_parent .text {
   position: absolute;
   bottom: 0;
-  background: rgb(131, 26, 26); /* Fallback color */
-  background: rgba(131, 26, 26, 0.7); /* Black background with 0.5 opacity */
+  background: rgb(131, 26, 26);
+  background: rgba(131, 26, 26, 0.7);
   color: #f1f1f1;
   width: 100%;
   height: 100%;
   padding: 20px;
   padding-top: 70px;
-
-  /* outline: green solid 2px; */
 }
 
 .img_parent .text p {
@@ -280,15 +300,27 @@ body {
   margin-bottom: 10px;
 }
 
+header .burger img {
+  width: 31px;
+  height: 27.28px;
+}
+
+header .logo {
+  display: none;
+}
+
+header .logo img {
+  width: 160px;
+  height: 45px;
+}
+
 .wrapper_logo .img_wrapper {
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 24px 12px 50px 12px;
-
-  /* outline: red solid 2px; */
+  margin: 24px 6px 50px 12px;
 }
 
 .s_logo .wrapper_logo img {
@@ -322,43 +354,8 @@ header .burger {
   align-items: center;
 }
 
-header .burger img {
-  width: 31px;
-  height: 27.28px;
-}
-
-header .logo {
-  display: none;
-}
-
-header .logo img {
-  width: 160px;
-  height: 45px;
-}
-
 .menu_wide .active {
   color: #ec5242;
-}
-
-.wrapper_logo h2 {
-  font-weight: 700;
-  font-size: 20px;
-  color: #272a31;
-  color: #2c2c2c;
-  text-align: center;
-  font-style: normal;
-  line-height: 28px;
-  letter-spacing: -0.4px;
-}
-
-.wrapper_logo p {
-  font-weight: 700;
-  font-size: 16px;
-  color: #2d0e0e;
-  text-align: center;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: -0.48px;
 }
 
 .s_headline h3 {
@@ -375,24 +372,12 @@ header .logo img {
   line-height: 36px;
 }
 
-.s_headline p {
-  font-weight: 500;
-  font-size: 11px;
-  color: #2d0e0e;
-}
-
 .s_headline .description {
   padding: 10px;
   margin: 15px 0 15px 0;
   border: #fff solid 3px;
   background-color: #fff;
   margin-bottom: 30px;
-}
-
-.s_headline h2 {
-  font-weight: 900;
-  font-size: 24px;
-  color: #272a31;
 }
 
 .s_headline .address {
@@ -468,7 +453,7 @@ header .logo img {
 
 .modal_menu {
   width: 100%;
-  background-color: #d3d3d3;
+  background-color: rgba(163, 159, 159, 0.8);
   border: 0;
 }
 
@@ -685,11 +670,6 @@ header .logo img {
     padding: 30px;
   }
 
-  /*
-  .s_logo .wrapper_logo {
-    display: none;
-  } */
-
   .s_logo {
     display: flex;
     flex-direction: column;
@@ -706,15 +686,6 @@ header .logo img {
     width: 60%;
   }
 
-  .s_past img {
-    /* width: 432px;
-    height: 236px; */
-
-    /* margin: 24px 0 24px 12px; */
-
-    /* margin: 0 0 12px 12px; */
-  }
-
   .img_parent {
     margin: auto 24px auto auto;
   }
@@ -725,8 +696,6 @@ header .logo img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    /* outline: rgb(47, 0, 255) solid 2px; */
   }
 
   .s_partners {

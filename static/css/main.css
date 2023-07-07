@@ -172,7 +172,6 @@ header .logo img {
   font-style: normal;
   line-height: 28px;
   letter-spacing: -0.14px;
-  padding-bottom: 15px;
 }
 
 .container .s_headline {
@@ -386,7 +385,7 @@ header .logo img {
 
 .modal_menu {
   width: 100%;
-  background-color: #d3d3d3;
+  background-color: rgba(163, 159, 159, 0.8);
   border: 0;
 }
 

@@ -153,6 +153,7 @@ Feel free to check the [issues page](../../issues/).
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+- The original template of this web application is designed by <a href="https://www.behance.net/adagio07">Cindy Shin</a>. You can find the orignal template <a href="https://www.behance.net/gallery/29845175/CC-Global-Summit-2015">here</a>.
 
 - I want to thank all my clients for their patronage.
 
