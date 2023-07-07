@@ -216,6 +216,7 @@ header {
 
   & h1 {
     @include lato-font($h1-text-size-mob, 900, $red-text-color);
+
     width: 336px;
     line-height: 36px;
   }
@@ -267,6 +268,7 @@ header {
 
 .s_main_programs {
   background-color: $black-text-color;
+
   & .programs {
     margin-top: 40px - 12px;
   }
@@ -298,9 +300,7 @@ header {
   & .icon img {
     max-width: 110px;
     max-height: 80px;
-
   }
-
 
   & .btn_join {
     margin: 30px 0 30px 0;
@@ -582,7 +582,9 @@ header {
 
     & h1 {
       width: 100%;
+
       @include lato-font($h1-text-size-desk, 900, $red-text-color);
+
       background-image: linear-gradient(to bottom, $red-text-color, rgba(240, 10, 10, 0.2)), url(../images/fire3.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -608,8 +610,6 @@ header {
     & .time_loc p {
       font-size: calc($p-text-size-desk + 2px);
     }
-
-  
   }
 
   .s_main_programs {

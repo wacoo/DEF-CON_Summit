@@ -2,41 +2,41 @@ const parent = document.getElementById('featured');
 
 const data = [
     {
-        img_path: 'static/images/speaker_01.png',
-        name: 'Yochai Benkler',
-        occupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
-        description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006'
+        img_path: 'static/images/miller-c.jpg',
+        name: 'Charlie Miller',
+        occupation: 'A world-class white hat hacker.',
+        description: 'Charlie won the Pwn2Own computer hacking contest four times. He found a vulnerability that would allow hacking into 1.4 million vehicles. He has worked for many high-tech companies including Twitter and Uber.'
 
     },
     {
-        img_path: 'static/images/speaker_02.png',
-        name: 'SohYeong Noh',
-        occupation: 'Director of Art Centre Nabi and a board member of CC Korea',
-        description: 'As the main venue for new media art production in Korea, Nabi promotes cross-disciplinary collaboration and understanding among science technology, humanities, and the arts.'
+        img_path: 'static/images/greg.jpg',
+        name: 'Greg Hoglund',
+        occupation: 'A specialist in computer forensics',
+        description: 'Hoglund is a crucial feature in our list of ethical hackers. Some of the areas he is best known for working in include physical memory forensics, attribution of hackers and malware detection.'
     },
     {
-        img_path: 'static/images/speaker_03.png',
-        name: 'Lila tretikov',
-        occupation: 'Executive Director of the Wikimedia Foundation',
-        description: 'Lila Tretikov is the Executive of the Wikimedia Foundation, the nonprofit organization that operates Wikipedia. Wikipedia is freely available in 290 languag-es and used by nearly half a billion people around the world every month.'
+        img_path: 'static/images/kevin2.jpg',
+        name: 'Kevin Mitnick',
+        occupation: 'Former Black Hat hacker, the most high-profile hacker in recent history',
+        description: 'Mitnick’s activities breaching major corporations for his amusement earned him a place on the FBI’s most-wanted list. He was arrested in 1995 and served five years in prison.'
     },
     {
-        img_path: 'static/images/speaker_04.png',
-        name: 'Kilnam Chon',
-        occupation: '',
-        description: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame'
+        img_path: 'static/images/Tsutomu-Shimomura.jpg',
+        name: 'Tsutomu Shimomura',
+        occupation: 'A cybersecurity expert, physicist, and is credited with tracking down Kevin Mitnick.',
+        description: 'Being a computational physics research scientist, Shimomura also worked for the National Security Agency (NSA). He was known to be one of the leading researchers who raised awareness of the lacking security and privacy of cellular phones at that time.'
     },
     {
-        img_path: 'static/images/speaker_05.png',
-        name: 'Julia Leda',
-        occupation: 'President of Young Pirates of Europe',
-        description: 'European ingetration, political democracy and participation of youth through online as her major condern, Reda’s report outlining potential changes to EU copyright law was approved by the Parliament in July'
+        img_path: 'static/images/1200px-Dan_Kaminsky_cropped.jpg',
+        name: 'Dan Kaminsky',
+        occupation: 'One of the most famous white hat hackers.',
+        description: 'In 2008 he found a DNS flaw which allowed black hat hackers to redirect requests from one website to another in seconds. Thanks to Kaminsky’s discovery the vulnerability was fixed quickly after.'
     },
     {
-        img_path: 'static/images/speaker_06.png',
-        name: 'Ryan Merkley',
+        img_path: 'static/images/British-scientist-Tim-Berners-Lee.webp',
+        name: 'Tim Berners-Lee',
         occupation: 'CEO of Creativve Commons, ex COO of the Mozilla Foundation',
-        description: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source move-ment'
+        description: 'One of the most famous names in computer science, Berners-Lee is the founder of the World Wide Web. Today he serves as the director of the World Wide Web Consortium (W3C), which oversees the development of the web.'
     }
 ];
 

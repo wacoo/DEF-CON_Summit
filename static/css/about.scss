@@ -168,6 +168,28 @@ header {
   }
 }
 
+
+.wrapper_logo {
+  h2 {
+    @include lato-font(20px, 700, $black-text-color);
+
+    color: #2c2c2c;
+    text-align: center;
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+  }
+
+  p {
+    @include lato-font(16px, 700, $silver-tranparent-looking);
+
+    text-align: center;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: -0.48px;
+  }
+}
+
 .s_headline {
   & h3 {
     @include lato-font($h3-text-mob, 400, $red-text-color);
@@ -227,6 +249,54 @@ header {
   }
 }
 
+.s_logo,
+.s_past {
+  & h2 {
+    color: $black-text-color;
+  }
+
+  .wrapper_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 12px 0;
+    text-align: center;
+    background-color: $white-color;
+  }
+}
+
+.s_logo {
+  & > h2 {
+    color: $black-text-color;
+
+    @include lato-font($h3-text-desk, 700, $black-text-color);
+  }
+
+  img {
+    margin: 50px 0 0 0;
+    padding: 0 12px;
+    width: 100%;
+  }
+}
+
+.s_past {
+  & .wrapper_logo {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+  }
+
+  p {
+    margin-bottom: 12px;
+  }
+
+  img {
+    width: calc(100% - 24px);
+    margin: 12px 12px 0;
+  }
+}
+
 .container {
   width: 100%;
   display: flex;
@@ -238,7 +308,6 @@ header {
     height: 430px;
     display: flex;
     justify-content: center;
-    padding-left: 0;
     background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dc-31-future.webp);
     background-repeat: no-repeat;
     background-size: cover;
@@ -266,77 +335,6 @@ header {
     @include lato-font($p-text-size, 400px, $silver-tranparent-looking);
 
     margin-top: 58px;
-  }
-}
-
-.s_logo,
-.s_past {
-  & h2 {
-    color: $black-text-color;
-  }
-
-  .wrapper_logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 12px 0;
-    text-align: center;
-    background-color: $white-color;
-  }
-}
-
-.wrapper_logo {
-  h2 {
-    @include lato-font(20px, 700, $black-text-color);
-
-    color: #2c2c2c;
-    text-align: center;
-    font-style: normal;
-    line-height: 28px;
-    letter-spacing: -0.4px;
-  }
-
-  p {
-    @include lato-font(16px, 700, $silver-tranparent-looking);
-
-    text-align: center;
-    font-style: normal;
-    line-height: 21px;
-    letter-spacing: -0.48px;
-  }
-
-
-}
-
-.s_logo {
-  &>h2 {
-    color: $black-text-color;
-
-    @include lato-font($h3-text-desk, 700, $black-text-color);
-  }
-
-  img {
-    margin: 50px 0 0 0;
-    padding: 0 12px;
-    width: 100%;
-  }
-}
-
-.s_past {
-  & .wrapper_logo {
-    width: 100%;
-    display: inline-flex;
-    justify-content: center;
-  }
-
-  p {
-    margin-bottom: 12px;
-  }
-
-  img {
-    width: calc(100% - 24px);
-    margin: 12px 12px 0;
   }
 }
 
@@ -656,7 +654,6 @@ header {
       width: 432px;
       height: 236px;
       margin: 24px 0 24px 12px;
-
     }
   }
 

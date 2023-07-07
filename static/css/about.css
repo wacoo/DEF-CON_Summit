@@ -127,6 +127,26 @@ header .logo img {
   color: #ec5242;
 }
 
+.wrapper_logo h2 {
+  font-weight: 700;
+  font-size: 20px;
+  color: #272a31;
+  color: #2c2c2c;
+  text-align: center;
+  font-style: normal;
+  line-height: 28px;
+  letter-spacing: -0.4px;
+}
+.wrapper_logo p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #2d0e0e;
+  text-align: center;
+  font-style: normal;
+  line-height: 21px;
+  letter-spacing: -0.48px;
+}
+
 .s_headline h3 {
   font-weight: 400;
   font-size: 24px;
@@ -181,44 +201,6 @@ header .logo img {
   margin: 15px;
 }
 
-.container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  background-color: #f7f7f7;
-}
-.container .wrap {
-  width: 100%;
-  height: 430px;
-  display: flex;
-  justify-content: center;
-  padding-left: 0;
-  background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dc-31-future.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 0 24px 0 24px;
-}
-.container .wrapper1 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 50px;
-}
-.container .s_headline,
-.container .s_logo {
-  width: 100%;
-  margin: 0;
-}
-.container .s_headline {
-  width: 100%;
-  font-weight: 400px;
-  font-size: 11px;
-  color: #2d0e0e;
-  margin-top: 58px;
-}
-
 .s_logo h2,
 .s_past h2 {
   color: #272a31;
@@ -232,26 +214,6 @@ header .logo img {
   padding: 30px 12px 0;
   text-align: center;
   background-color: #fff;
-}
-
-.wrapper_logo h2 {
-  font-weight: 700;
-  font-size: 20px;
-  color: #272a31;
-  color: #2c2c2c;
-  text-align: center;
-  font-style: normal;
-  line-height: 28px;
-  letter-spacing: -0.4px;
-}
-.wrapper_logo p {
-  font-weight: 700;
-  font-size: 16px;
-  color: #2d0e0e;
-  text-align: center;
-  font-style: normal;
-  line-height: 21px;
-  letter-spacing: -0.48px;
 }
 
 .s_logo > h2 {
@@ -277,6 +239,43 @@ header .logo img {
 .s_past img {
   width: calc(100% - 24px);
   margin: 12px 12px 0;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+}
+.container .wrap {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgb(250, 246, 246), rgba(247, 247, 247, 0.7)), url(../images/dc-31-future.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 24px 0 24px;
+}
+.container .wrapper1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 50px;
+}
+.container .s_headline,
+.container .s_logo {
+  width: 100%;
+  margin: 0;
+}
+.container .s_headline {
+  width: 100%;
+  font-weight: 400px;
+  font-size: 11px;
+  color: #2d0e0e;
+  margin-top: 58px;
 }
 
 .s_partners {
