@@ -253,17 +253,17 @@ header .logo img {
   line-height: 21px;
   letter-spacing: -0.48px;
 }
-.wrapper_logo img {
-  margin: 50px 0 0 0;
-  width: 450px;
-  height: 300px;
-}
 
 .s_logo > h2 {
   color: #272a31;
   font-weight: 700;
   font-size: 30px;
   color: #272a31;
+}
+.s_logo img {
+  margin: 50px 0 0 0;
+  padding: 0 12px;
+  width: 100%;
 }
 
 .s_past .wrapper_logo {
@@ -275,7 +275,8 @@ header .logo img {
   margin-bottom: 12px;
 }
 .s_past img {
-  margin: 12px 24px 0;
+  width: calc(100% - 24px);
+  margin: 12px 12px 0;
 }
 
 .s_partners {
@@ -555,6 +556,8 @@ header .logo img {
     align-items: center;
   }
   .s_past img {
+    width: 432px;
+    height: 236px;
     margin: 24px 0 24px 12px;
   }
   .s_partners {

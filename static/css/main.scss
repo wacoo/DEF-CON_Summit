@@ -108,13 +108,17 @@ $silver-tranparent-looking: #2d0e0e;
 $padding-margin-left-right: 0 30px 0 30px;
 $tb-gap-sections: 10px 0 10px 0;
 
-$p-text-size: 11px;
+$p-text-size-mob: 11px;
+$p-text-size-desk: 15px;
 $h3-text-mob: 24px;
 $h3-text-desk: 30px;
-$h3-text-14: 14px;
+$h3-text-mob-14: 14px;
+$h3-text-desk-20: 20px;
 $h1-text-size-mob: 32px;
 $h1-text-size-desk: 50px;
 $h2-text-size: 27px;
+
+$btn-16: 16px;
 
 @mixin lato-font ($size, $weight, $color) {
   font-weight: $weight;
@@ -185,7 +189,7 @@ header {
   }
 
   & .wrapper1 {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   & .s_headline,
@@ -199,7 +203,7 @@ header {
   & .s_headline {
     width: 100%;
 
-    @include lato-font($p-text-size, 400px, $silver-tranparent-looking);
+    @include lato-font($p-text-size-mob, 400px, $silver-tranparent-looking);
 
     margin-top: 58px;
   }
@@ -217,13 +221,13 @@ header {
   }
 
   & p {
-    @include lato-font($p-text-size, 500, $silver-tranparent-looking);
+    @include lato-font($p-text-size-mob, 500, $silver-tranparent-looking);
   }
 
   & .description {
-    max-width: 500px;
+    max-width: 100%;
     padding: 15px;
-    margin: 15px 0 15px 0;
+    margin: 30px 0 15px 0;
     border: $white-color solid 3px;
   }
 
@@ -232,11 +236,12 @@ header {
   }
 
   & .time_loc {
+    margin-top: 30px;
     margin-left: 10px;
   }
 
   & .time_loc p {
-    font-size: calc($p-text-size + 2px);
+    font-size: calc($p-text-size-mob + 2px);
   }
 }
 
@@ -245,7 +250,7 @@ header {
     margin: 12px 0 12px 0;
     text-align: center;
 
-    @include lato-font(20px, 400, $white-color);
+    @include lato-font($h3-text-desk-20, 400, $white-color);
 
     font-style: normal;
     line-height: 28px;
@@ -269,19 +274,19 @@ header {
   & .card {
     margin: 10px 12px;
     display: grid;
-    grid-template-columns: 70px 80px 2fr;
+    grid-template-columns: 120px 90px 1fr;
     align-items: center;
     background-color: $bg-color-rgba;
   }
 
   & div.card p {
-    @include lato-font($p-text-size, 500, $white-color);
+    @include lato-font($p-text-size-mob, 500, $white-color);
 
     line-height: 17px;
   }
 
   & .card h3 {
-    @include lato-font($h3-text-14, 700, $red-text-color);
+    @include lato-font($h3-text-mob-14, 700, $red-text-color);
   }
 
   & .card p,
@@ -291,8 +296,8 @@ header {
   }
 
   & .icon img {
-    width: 110px;
-    height: 80px;
+    max-width: 110px;
+    max-height: 80px;
 
   }
 
@@ -304,7 +309,7 @@ header {
   }
 
   & .btn_join a {
-    @include lato-font(16px, 900, $white-color);
+    @include lato-font($btn-16, 900, $white-color);
 
     padding: 20px 50px;
     background-color: $red-text-color;
@@ -336,11 +341,11 @@ header {
   }
 
   & .feature_card h3 {
-    @include lato-font($h3-text-14, 700, $black-text-color);
+    @include lato-font($h3-text-mob-14, 700, $black-text-color);
   }
 
   & .feature_card .occupation {
-    @include lato-font($p-text-size, 500, $red-text-color);
+    @include lato-font($p-text-size-mob, 500, $red-text-color);
 
     font-style: italic;
     line-height: 17px;
@@ -354,7 +359,7 @@ header {
   }
 
   & .feature_card .description {
-    @include lato-font($p-text-size, 500, $black-text-color);
+    @include lato-font($p-text-size-mob, 500, $black-text-color);
 
     line-height: 17px;
   }
@@ -586,6 +591,25 @@ header {
       color: transparent;
       line-height: 50px;
     }
+
+    & .description {
+      margin-top: 50px;
+      max-width: 60%;
+    }
+
+    p {
+      @include lato-font($p-text-size-desk, 500, $silver-tranparent-looking);
+    }
+
+    & .time_loc {
+      margin-top: 50px;
+    }
+
+    & .time_loc p {
+      font-size: calc($p-text-size-desk + 2px);
+    }
+
+  
   }
 
   .s_main_programs {

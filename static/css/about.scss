@@ -306,18 +306,20 @@ header {
     letter-spacing: -0.48px;
   }
 
-  img {
-    margin: 50px 0 0 0;
-    width: 450px;
-    height: 300px;
-  }
+
 }
 
 .s_logo {
-  & > h2 {
+  &>h2 {
     color: $black-text-color;
 
     @include lato-font($h3-text-desk, 700, $black-text-color);
+  }
+
+  img {
+    margin: 50px 0 0 0;
+    padding: 0 12px;
+    width: 100%;
   }
 }
 
@@ -333,7 +335,8 @@ header {
   }
 
   img {
-    margin: 12px 24px 0;
+    width: calc(100% - 24px);
+    margin: 12px 12px 0;
   }
 }
 
@@ -650,7 +653,10 @@ header {
 
   .s_past {
     img {
+      width: 432px;
+      height: 236px;
       margin: 24px 0 24px 12px;
+
     }
   }
 
