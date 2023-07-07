@@ -84,7 +84,7 @@ This year at DEF CON you’ll see this new DEF CON Community format in action wi
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+<!-- LIVE DEMO  -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 - Click <a href="https://wacoo.github.io/DEF-CON_Summit/">here</a> to open the live demo.
