@@ -58,7 +58,7 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 DEFCON Conference Portal <a name="about-project"></a>
 
-**DEFCON Conference Portal** is a webside developed to be a hub for any DEFCON conference related issues. 
+**DEFCON Conference Portal** is a website developed to be a hub for any DEFCON conference-related issues. 
 
 DEFCON started as talks and parties that evolved into a community of those who with a hacker’s mindset and an insatiable curiosity of how things work. We are committed to creating a place for all hackers to share, interact and learn from each other. Sometimes, though, we have to reassess whether the structure of DEF CON is helping or hindering this vision.
 
@@ -77,7 +77,7 @@ This year at DEF CON you’ll see this new DEF CON Community format in action wi
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-- **Cyber Secutiry Related News**
+- **Cyber Security Related News**
 - **DEFCON Conference Workshops**
 - **Education and Training**
 - **DEFCON Conference Tickets**
@@ -92,7 +92,7 @@ This year at DEF CON you’ll see this new DEF CON Community format in action wi
 
 ## 💻 Project Presentation <a name="presentation"></a>
 <!-- - Click <a href="">here</a> to open the presentation. -->
-- Comming soon
+- - Click <a href="https://www.loom.com/share/26fe682bfcdf4fa3b9e70d4ed4132dd0">here</a> to open the presentation.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
