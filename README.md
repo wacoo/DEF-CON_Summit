@@ -91,8 +91,7 @@ This year at DEF CON you’ll see this new DEF CON Community format in action wi
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Project Presentation <a name="presentation"></a>
-<!-- - Click <a href="">here</a> to open the presentation. -->
-- Comming soon
+Click <a href="https://www.loom.com/share/26fe682bfcdf4fa3b9e70d4ed4132dd0"">here</a> to open the presentation.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- GETTING STARTED -->
 
